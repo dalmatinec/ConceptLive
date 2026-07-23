@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Расписание — APEX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-live">● LIVE</span> Реал Мадрид <strong>2–1</strong> Манчестер Сити</span>
+    <span class="ticker-item">NHL <strong>Бостон 3–2 Торонто</strong></span>
+    <span class="ticker-item">NBA сегодня <strong>21:30</strong> Лейкерс — Селтикс</span>
+    <span class="ticker-item"><span class="t-live">● LIVE</span> Реал Мадрид <strong>2–1</strong> Манчестер Сити</span>
+    <span class="ticker-item">NHL <strong>Бостон 3–2 Торонто</strong></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M15 2L27 26H21.5L15 12L8.5 26H3L15 2Z" fill="url(#g1)"/><defs><linearGradient id="g1" x1="3" y1="2" x2="27" y2="26"><stop stop-color="#E5B862"/><stop offset="1" stop-color="#4F86B3"/></linearGradient></defs></svg>
+      APEX
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="categories.html">Категории</a>
+      <a href="esports.html">Киберспорт</a>
+      <a href="schedule.html" class="active">Расписание</a>
+      <a href="search.html">Поиск</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="search.html" class="icon-btn" aria-label="Поиск">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </a>
+      <a href="#" class="btn btn-primary hide-mobile">Войти</a>
+      <button class="nav-toggle" aria-label="Меню">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top: 40px; padding-bottom: 64px;">
+
+  <div class="reveal" style="margin-bottom:28px;">
+    <h1 style="font-family:var(--font-display);font-size:clamp(28px,3.6vw,40px);font-weight:600;letter-spacing:-0.02em;">Расписание трансляций</h1>
+    <p style="color:var(--text-2);font-size:15px;margin-top:8px;">Все матчи и турниры — сегодня, завтра и на неделю вперёд</p>
+  </div>
+
+  <div class="reveal" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+    <div class="tabs">
+      <button class="active" data-day-tab="today">Сегодня</button>
+      <button data-day-tab="tomorrow">Завтра</button>
+      <button data-day-tab="week">На неделю</button>
+    </div>
+  </div>
+
+  <div class="filters-row reveal">
+    <button class="chip-filter active" data-sport-filter="all">Все виды спорта</button>
+    <button class="chip-filter" data-sport-filter="football">Футбол</button>
+    <button class="chip-filter" data-sport-filter="hockey">Хоккей</button>
+    <button class="chip-filter" data-sport-filter="basketball">Баскетбол</button>
+    <button class="chip-filter" data-sport-filter="tennis">Теннис</button>
+    <button class="chip-filter" data-sport-filter="esports">Киберспорт</button>
+  </div>
+
+  <!-- TODAY -->
+  <div class="match-grid reveal" data-day-panel="today" style="display:grid;">
+
+    <div class="match-card" data-sport="football">
+      <div class="match-card-top"><span class="league">UEFA Champions League</span><span class="live-badge"><span class="live-dot"></span>LIVE</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">RMA</span>Реал Мадрид</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Ман Сити<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">MCI</span></span>
+      </div>
+      <div class="match-card-bottom"><span>2 — 1</span><span>67’</span></div>
+    </div>
+
+    <div class="match-card" data-sport="hockey">
+      <div class="match-card-top"><span class="league">NHL</span><span class="live-badge"><span class="live-dot"></span>LIVE</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">BOS</span>Бостон</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Торонто<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">TOR</span></span>
+      </div>
+      <div class="match-card-bottom"><span>3 — 2</span><span>3-й период</span></div>
+    </div>
+
+    <div class="match-card" data-sport="basketball">
+      <div class="match-card-top"><span class="league">NBA</span><span class="badge">21:30</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">LAL</span>Лейкерс</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Селтикс<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">BOS</span></span>
+      </div>
+      <div class="match-card-bottom"><span>—</span><span>Начало через 2ч 10м</span></div>
+    </div>
+
+    <div class="match-card" data-sport="esports">
+      <div class="match-card-top"><span class="league">BLAST Premier · CS2</span><span class="live-badge"><span class="live-dot"></span>LIVE</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">NAVI</span>NAVI</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Vitality<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">VIT</span></span>
+      </div>
+      <div class="match-card-bottom"><span>1 — 0</span><span>Карта 2</span></div>
+    </div>
+
+    <div class="match-card" data-sport="football">
+      <div class="match-card-top"><span class="league">Premier League</span><span class="badge">19:45</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">ARS</span>Арсенал</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Ливерпуль<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">LIV</span></span>
+      </div>
+      <div class="match-card-bottom"><span>—</span><span>Начало через 4ч</span></div>
+    </div>
+
+    <div class="match-card" data-sport="esports">
+      <div class="match-card-top"><span class="league">ESL Pro League</span><span class="badge">18:00</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">G2</span>G2</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">FaZe<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">FZ</span></span>
+      </div>
+      <div class="match-card-bottom"><span>—</span><span>Начало через 45м</span></div>
+    </div>
+
+  </div>
+
+  <!-- TOMORROW (hidden by default) -->
+  <div class="match-grid reveal" data-day-panel="tomorrow" style="display:none;">
+
+    <div class="match-card" data-sport="tennis">
+      <div class="match-card-top"><span class="league">ATP · Уимблдон</span><span class="badge">15:00</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">ALC</span>Алькарас</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Синнер<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">SIN</span></span>
+      </div>
+      <div class="match-card-bottom"><span>1/4 финала</span><span>Завтра</span></div>
+    </div>
+
+    <div class="match-card" data-sport="esports">
+      <div class="match-card-top"><span class="league">Valorant Champions Tour</span><span class="badge">12:00</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">SEN</span>Sentinels</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Fnatic<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">FNC</span></span>
+      </div>
+      <div class="match-card-bottom"><span>Группа A</span><span>Завтра</span></div>
+    </div>
+
+    <div class="match-card" data-sport="football">
+      <div class="match-card-top"><span class="league">Premier League</span><span class="badge">17:30</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">CHE</span>Челси</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Тоттенхэм<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">TOT</span></span>
+      </div>
+      <div class="match-card-bottom"><span>Тур 22</span><span>Завтра</span></div>
+    </div>
+
+  </div>
+
+  <!-- WEEK (hidden by default) -->
+  <div class="match-grid reveal" data-day-panel="week" style="display:none;">
+
+    <div class="match-card" data-sport="basketball">
+      <div class="match-card-top"><span class="league">NBA</span><span class="badge">Пт, 20:00</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">GSW</span>Уорриорз</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Никс<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">NYK</span></span>
+      </div>
+      <div class="match-card-bottom"><span>—</span><span>Пятница</span></div>
+    </div>
+
+    <div class="match-card" data-sport="hockey">
+      <div class="match-card-top"><span class="league">NHL</span><span class="badge">Сб, 22:00</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">EDM</span>Эдмонтон</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">Виннипег<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">WPG</span></span>
+      </div>
+      <div class="match-card-bottom"><span>—</span><span>Суббота</span></div>
+    </div>
+
+    <div class="match-card" data-sport="esports">
+      <div class="match-card-top"><span class="league">Esports World Cup</span><span class="badge">Вс, Финал</span></div>
+      <div class="match-card-teams">
+        <span class="mc-team"><span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">TBD</span>TBD</span>
+        <span class="mc-vs">VS</span>
+        <span class="mc-team">TBD<span class="mark" style="font-family:var(--font-mono);font-size:9px;font-weight:700;">TBD</span></span>
+      </div>
+      <div class="match-card-bottom"><span>Гранд-финал</span><span>Воскресенье</span></div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 APEX. Все права защищены.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-nav">
+  <a href="index.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    Главная
+  </a>
+  <a href="categories.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    Категории
+  </a>
+  <a href="watch.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+    LIVE
+  </a>
+  <a href="schedule.html" class="active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+    Расписание
+  </a>
+  <a href="search.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    Поиск
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

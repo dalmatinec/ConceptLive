@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Категории — APEX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-live">● LIVE</span> Реал Мадрид <strong>2–1</strong> Манчестер Сити <span class="t-dot">·</span> 67’</span>
+    <span class="ticker-item">NHL <strong>Бостон 3–2 Торонто</strong> <span class="t-dot">·</span> 3-й период</span>
+    <span class="ticker-item">NBA сегодня <strong>21:30</strong> Лейкерс — Селтикс</span>
+    <span class="ticker-item"><span class="t-live">● LIVE</span> CS2 · BLAST Premier <strong>NAVI 1–0 Vitality</strong></span>
+    <span class="ticker-item"><span class="t-live">● LIVE</span> Реал Мадрид <strong>2–1</strong> Манчестер Сити <span class="t-dot">·</span> 67’</span>
+    <span class="ticker-item">NHL <strong>Бостон 3–2 Торонто</strong> <span class="t-dot">·</span> 3-й период</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M15 2L27 26H21.5L15 12L8.5 26H3L15 2Z" fill="url(#g1)"/><defs><linearGradient id="g1" x1="3" y1="2" x2="27" y2="26"><stop stop-color="#E5B862"/><stop offset="1" stop-color="#4F86B3"/></linearGradient></defs></svg>
+      APEX
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="categories.html" class="active">Категории</a>
+      <a href="esports.html">Киберспорт</a>
+      <a href="schedule.html">Расписание</a>
+      <a href="search.html">Поиск</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="search.html" class="icon-btn" aria-label="Поиск">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </a>
+      <a href="#" class="btn btn-primary hide-mobile">Войти</a>
+      <button class="nav-toggle" aria-label="Меню">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top: 48px;">
+
+  <div class="reveal" style="margin-bottom:40px;">
+    <span class="badge gold">Категории</span>
+    <h1 style="font-family:var(--font-display);font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-0.02em;margin-top:16px;">Выбери свой вид спорта</h1>
+    <p style="color:var(--text-2);font-size:15px;max-width:520px;margin-top:10px;">Прямые трансляции, статистика и расписание — по каждому направлению отдельно.</p>
+  </div>
+
+  <div class="category-grid reveal">
+
+    <a href="index.html" class="category-card" style="--spot: rgba(79,180,120,0.18);">
+      <div class="cat-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7fd3a0" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 6l3.6 2.6-1.4 4.2h-4.4L8.4 8.6 12 6z" fill="#7fd3a0" stroke="none" opacity="0.9"/><path d="M12 3v3M12 21v-3M3 12h3M21 12h-3M5.6 5.6l2 2M18.4 5.6l-2 2M5.6 18.4l2-2M18.4 18.4l-2-2"/></svg>
+      </div>
+      <div>
+        <h3>Футбол</h3>
+        <div class="count">238 прямых эфиров сегодня</div>
+      </div>
+      <div class="go">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 19L19 5M9 5h10v10"/></svg>
+      </div>
+    </a>
+
+    <a href="index.html" class="category-card" style="--spot: rgba(79,134,179,0.2);">
+      <div class="cat-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7fb3dd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l5-15c.3-1 1.2-1.6 2.2-1.4l6 1.2"/><ellipse cx="18" cy="19" rx="3.4" ry="1.6"/></svg>
+      </div>
+      <div>
+        <h3>Хоккей</h3>
+        <div class="count">64 прямых эфира сегодня</div>
+      </div>
+      <div class="go">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 19L19 5M9 5h10v10"/></svg>
+      </div>
+    </a>
+
+    <a href="index.html" class="category-card" style="--spot: rgba(212,165,74,0.2);">
+      <div class="cat-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d4a54a" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.6 4 9s-1.5 6.5-4 9M12 3c-2.5 2.5-4 5.6-4 9s1.5 6.5 4 9M4.5 6.5c2 1.6 4.7 2.5 7.5 2.5s5.5-.9 7.5-2.5M4.5 17.5c2-1.6 4.7-2.5 7.5-2.5s5.5.9 7.5 2.5"/></svg>
+      </div>
+      <div>
+        <h3>Баскетбол</h3>
+        <div class="count">51 прямой эфир сегодня</div>
+      </div>
+      <div class="go">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 19L19 5M9 5h10v10"/></svg>
+      </div>
+    </a>
+
+    <a href="index.html" class="category-card" style="--spot: rgba(212,165,74,0.16);">
+      <div class="cat-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8c97a" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M4 7c3 2 4 4.5 4 9M20 7c-3 2-4 4.5-4 9"/></svg>
+      </div>
+      <div>
+        <h3>Теннис</h3>
+        <div class="count">29 прямых эфиров сегодня</div>
+      </div>
+      <div class="go">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 19L19 5M9 5h10v10"/></svg>
+      </div>
+    </a>
+
+    <a href="esports.html" class="category-card" style="--spot: rgba(155,120,220,0.2); grid-column: span 1;">
+      <div class="cat-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b79ae8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5.5"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="10.5" r="1"/><circle cx="18.5" cy="13" r="1"/></svg>
+      </div>
+      <div>
+        <h3>Киберспорт</h3>
+        <div class="count">112 прямых эфиров сегодня</div>
+      </div>
+      <div class="go">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 19L19 5M9 5h10v10"/></svg>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="logo">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><path d="M15 2L27 26H21.5L15 12L8.5 26H3L15 2Z" fill="url(#g2)"/><defs><linearGradient id="g2" x1="3" y1="2" x2="27" y2="26"><stop stop-color="#E5B862"/><stop offset="1" stop-color="#4F86B3"/></linearGradient></defs></svg>
+        APEX
+      </a>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Платформа</h4>
+          <a href="index.html">Главная</a>
+          <a href="categories.html">Категории</a>
+          <a href="schedule.html">Расписание</a>
+        </div>
+        <div class="footer-col">
+          <h4>Виды спорта</h4>
+          <a href="categories.html">Футбол</a>
+          <a href="categories.html">Хоккей</a>
+          <a href="esports.html">Киберспорт</a>
+        </div>
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <a href="#">О нас</a>
+          <a href="#">Поддержка</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 APEX. Все права защищены.</span>
+      <span>Сделано для тех, кто не пропускает игру.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-nav">
+  <a href="index.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    Главная
+  </a>
+  <a href="categories.html" class="active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    Категории
+  </a>
+  <a href="watch.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+    LIVE
+  </a>
+  <a href="schedule.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+    Расписание
+  </a>
+  <a href="search.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    Поиск
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

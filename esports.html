@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Киберспорт — APEX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-live">● LIVE</span> CS2 · BLAST Premier <strong>NAVI 1–0 Vitality</strong> <span class="t-dot">·</span> Карта 2</span>
+    <span class="ticker-item">Dota 2 · ESL Pro League <strong>Сегодня 18:00</strong></span>
+    <span class="ticker-item">Valorant Champions Tour <strong>Завтра</strong> · 4 матча</span>
+    <span class="ticker-item"><span class="t-live">● LIVE</span> League of Legends · PGL <strong>T1 2–1 Gen.G</strong></span>
+    <span class="ticker-item"><span class="t-live">● LIVE</span> CS2 · BLAST Premier <strong>NAVI 1–0 Vitality</strong> <span class="t-dot">·</span> Карта 2</span>
+    <span class="ticker-item">Dota 2 · ESL Pro League <strong>Сегодня 18:00</strong></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M15 2L27 26H21.5L15 12L8.5 26H3L15 2Z" fill="url(#g1)"/><defs><linearGradient id="g1" x1="3" y1="2" x2="27" y2="26"><stop stop-color="#E5B862"/><stop offset="1" stop-color="#4F86B3"/></linearGradient></defs></svg>
+      APEX
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="categories.html">Категории</a>
+      <a href="esports.html" class="active">Киберспорт</a>
+      <a href="schedule.html">Расписание</a>
+      <a href="search.html">Поиск</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="search.html" class="icon-btn" aria-label="Поиск">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </a>
+      <a href="#" class="btn btn-primary hide-mobile">Войти</a>
+      <button class="nav-toggle" aria-label="Меню">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top: 40px;">
+
+  <div class="page-banner reveal">
+    <div class="page-banner-content">
+      <span class="badge gold">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#d4a54a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5.5"/><circle cx="16" cy="10.5" r="1"/><circle cx="18.5" cy="13" r="1"/></svg>
+        Главное событие сезона
+      </span>
+      <h1>Esports World Cup 2026</h1>
+      <p>25 дисциплин, 200+ команд и общий призовой фонд свыше $70 млн. Смотри путь к финалу в прямом эфире.</p>
+      <div style="margin-top:24px; display:flex; gap:12px;">
+        <a href="watch.html" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Смотреть трансляцию
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head reveal">
+    <div>
+      <h2>Турниры</h2>
+      <p class="sub">Все главные лиги и чемпионаты по дисциплинам</p>
+    </div>
+  </div>
+
+  <div class="esports-list reveal">
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:13px;">BL</span>
+      <div class="esports-info"><div class="name">BLAST Premier</div><div class="game">Counter-Strike 2</div></div>
+      <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+      <span class="esports-matches">3 матча сегодня</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:13px;">IEM</span>
+      <div class="esports-info"><div class="name">Intel Extreme Masters</div><div class="game">Counter-Strike 2</div></div>
+      <span class="badge">Сегодня</span>
+      <span class="esports-matches">5 матчей</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:12px;">PGL</span>
+      <div class="esports-info"><div class="name">PGL</div><div class="game">Dota 2 · CS2</div></div>
+      <span class="badge">Завтра</span>
+      <span class="esports-matches">4 матча</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:13px;">ESL</span>
+      <div class="esports-info"><div class="name">ESL Pro League</div><div class="game">Counter-Strike 2</div></div>
+      <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+      <span class="esports-matches">2 матча сегодня</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:11px;">VCT</span>
+      <div class="esports-info"><div class="name">Valorant Champions Tour</div><div class="game">Valorant</div></div>
+      <span class="badge">Завтра</span>
+      <span class="esports-matches">4 матча</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:11px;">DOTA</span>
+      <div class="esports-info"><div class="name">Dota 2 Majors</div><div class="game">Dota 2</div></div>
+      <span class="badge">Сегодня</span>
+      <span class="esports-matches">6 матчей</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:11px;">LoL</span>
+      <div class="esports-info"><div class="name">League of Legends</div><div class="game">LCK · LEC · LCS</div></div>
+      <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+      <span class="esports-matches">1 матч сейчас</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:12px;">PUBG</span>
+      <div class="esports-info"><div class="name">PUBG Global Series</div><div class="game">PUBG</div></div>
+      <span class="badge">Завтра</span>
+      <span class="esports-matches">3 матча</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:12px;">R6</span>
+      <div class="esports-info"><div class="name">Rainbow Six</div><div class="game">Six Invitational</div></div>
+      <span class="badge">Сегодня</span>
+      <span class="esports-matches">2 матча</span>
+    </a>
+
+    <a href="watch.html" class="esports-row">
+      <span class="esports-mark" style="font-family:var(--font-mono);font-weight:700;font-size:10px;">OW</span>
+      <div class="esports-info"><div class="name">Overwatch Champions</div><div class="game">Overwatch 2</div></div>
+      <span class="badge">Завтра</span>
+      <span class="esports-matches">3 матча</span>
+    </a>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="logo">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none"><path d="M15 2L27 26H21.5L15 12L8.5 26H3L15 2Z" fill="url(#g2)"/><defs><linearGradient id="g2" x1="3" y1="2" x2="27" y2="26"><stop stop-color="#E5B862"/><stop offset="1" stop-color="#4F86B3"/></linearGradient></defs></svg>
+        APEX
+      </a>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Платформа</h4>
+          <a href="index.html">Главная</a>
+          <a href="categories.html">Категории</a>
+          <a href="schedule.html">Расписание</a>
+        </div>
+        <div class="footer-col">
+          <h4>Виды спорта</h4>
+          <a href="categories.html">Футбол</a>
+          <a href="categories.html">Хоккей</a>
+          <a href="esports.html">Киберспорт</a>
+        </div>
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <a href="#">О нас</a>
+          <a href="#">Поддержка</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 APEX. Все права защищены.</span>
+      <span>Сделано для тех, кто не пропускает игру.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-nav">
+  <a href="index.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    Главная
+  </a>
+  <a href="categories.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    Категории
+  </a>
+  <a href="watch.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+    LIVE
+  </a>
+  <a href="schedule.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+    Расписание
+  </a>
+  <a href="search.html">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    Поиск
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
